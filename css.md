@@ -38,4 +38,15 @@
      border-color: purple;
      border-width: thick;
      border-style: solid;
+     border-radius: 10 px;
  }
+ - A border width can be altered using pixels. border-width: 10px. A border can be given rounded corners using border-radius: 10px. Using border-radius: 50% will give you an almost circular border. 
+## ID attributes
+- id attributes should be unique
+- Benefits for id attributes, to style a single element and can later modify specific elements in Javascript. 
+## Adjust Padding
+- Control space for HTML elements include padding, border and margin
+- Padding controls the amount of space between elements content and border. 
+- An elements margin controls the amount of space between the elements border and surrounding elements. You can use a negative value of margin to make the element bigger. 
+- You can change padding on each side of the element padding-top padding-right padding-bottom padding-left. You can also use a clockwise motion instead of listing all. padding 50px 40px 50px 40px
+- Change margins on different sides using margin-top margin-right margin-bottom margin-left.
