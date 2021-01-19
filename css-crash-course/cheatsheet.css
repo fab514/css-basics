@@ -1,72 +1,85 @@
 /* *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 } */
 /* Asterisk block will change the entire page. Setting certaing values to 0
  will reset the entire page which is helpful for long code. */
 
 body {
-    background-color:skyblue;
+    background-color: skyblue;
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    font-size:16px;
-    line-height:1.6em;
-    margin:0;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
 
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:visited{
+    color: firebrick;
+}
+
+a:hover{
+    color: red;
+}
+a:active{
+    color: green;
 }
 
 .container{
     /* width: 500px; */
-    width:80%;
-    margin:auto;
+    width: 80%;
+    margin: auto;
 }
 
 .box-1{
     background-color: #333;
-    color:#fff;
-    border-right:5px red solid;
-    border-left:5px red solid;
-    border-top:5px red solid;
-    border-bottom:5px red solid;
+    color: #fff;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
     /* Same as above */
-    border:5px red solid;
-    border-width:3px;
-    border-bottom-width:10px;
-    border-top-style:dotted;
-    border:5px red solid;
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    border: 5px red solid;
 
-    padding-top:20px;
-    padding-right:20px;
-    padding-bottom:20px;
-    padding-left:20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     /* Same as above */
-    padding:20px;
+    padding: 20px;
 
-    margin:20px 0;
-
+    margin: 20px 0;
 }
-
 .box-1 h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:800;
-    font-style:italic;
-    text-decoration:underline;
-    text-transform:uppercase;
-    letter-spacing:0.2em;
-    word-spacing:1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
 }
 
 .box-2{
-    border:3px dotted #ccc;
-    padding:20px;
-    margin:20px 0;
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 .categories{
-    border:1px #ccc solid;
-    padding:10px;
-    border-radius:15px;
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
     /* border radius rounds out the borders edges. */
 }
 .categories h2{
@@ -74,7 +87,25 @@ body {
     /* text align for center will put the text to the center of the element. */
 }
 .categories ul{
-    padding:0;
-    list-style:square;
+    padding: 0;
+    padding-left: 30px;
+    list-style: square;
     /* list-style none is an option to get rid of bullet points. */
+}
+.categories li{
+    padding: 6px;
+    border-bottom: dotted 1px;
+    list-style-image: url(../checkmark.png);
+}
+
+.my-form{
+    padding:20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display:block;
 }

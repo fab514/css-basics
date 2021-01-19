@@ -114,3 +114,37 @@ p{
 border-right:5px red solid;
 border:5px red solid;
 ```
+## Hyperlink styling
+- You can change the look of a hyper link. You can change the background color, take away the underline, the text color in the original state, when you hover over the link or when the link is activated. If you use the a selector it will manipulate all of the links on the page. 
+```cs
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: red;
+}
+// Active is the time the link is being clicked. 
+a:active{
+    color: green;
+}
+a:visited{
+    color: yellow;
+}
+```
+## List Style Image
+- You can use list-style-image to bring in a different kind of list markings. 
+```cs
+.categories li{
+    padding: 6px;
+    border-bottom: dotted 1px;
+    list-style-image: url(../checkmark.png);
+}
+```
+## Positioning in CSS 
+- Static
+- Relative
+- Absolute
+- Fixed 
+- Initial
+- Inherit
