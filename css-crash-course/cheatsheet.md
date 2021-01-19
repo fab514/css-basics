@@ -163,11 +163,39 @@ message box you must put in a type textarea. Since the button is in the form it 
     width: 100%;
 }
 ```
+## floating blocks
+- In the following example the float was put to the left. The width will make a width of each block on the line These are next to each other. Using box-sizing border box will resize the entire box with the added border so it will still fit within the same width. 
+```cs
+.block{
+    float:left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+```
+- floating article section next to the normal main section. 
+```cs
+// Normal main block
+#main-block{
+    float: left;
+    width: 70%;
+}
+
+#sidebar{
+    float: right; // Floats sidebar to the right. 
+    width: 30%; // sidebar takes up 30% of the line. 
+    background-color: #333; // background color block.
+    color:#fff; // text of block
+    padding: 15px; // padding of text inside of block.
+    box-sizing: border-box; // makes the box fit to the width percentage. 
+}
+```
 
 ## Positioning in CSS 
-- Static
-- Relative
-- Absolute
-- Fixed 
-- Initial
-- Inherit
+- Static- Is the default positioning. Renders the elements in order of the document flow. 
+- Relative - the element is positioned relative to from it's original position. This can send the element up down right and left of the original position. 
+- Absolute - target whatever position we want inside of a relative element.
+- Fixed- fixed position to the browser position. Even when you scroll. 
+- Initial- sets property to the default value
+- Inherit- sets the child property to it's parent element. 
