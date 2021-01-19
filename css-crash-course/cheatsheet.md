@@ -141,6 +141,29 @@ a:visited{
     list-style-image: url(../checkmark.png);
 }
 ```
+## Form
+
+```cs
+.my-form{
+    padding:20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+// Display block will change an inline element into a block. 
+.my-form label{
+    display:block;
+}
+/* having the type="text" will make any of the inputs 
+that have text will have this CSS. In order to cover the 
+message box you must put in a type textarea. Since the button is in the form it will also be effected unless you add type. */
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+```
+
 ## Positioning in CSS 
 - Static
 - Relative
