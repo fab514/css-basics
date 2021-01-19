@@ -39,6 +39,55 @@ body{
     padding-right: 15px;
 }
 
+/* min-height will have the image to grow or shrink with the window.  */
 #showcase{
-    background-image: url();
+    background-image: url('./pink-coral-background.jpg');
+    background-position: center right;
+    min-height: 300px; 
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#main{
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* Any media will be in effect under 600px */
+/* The main and sidebar id will stay at 100% of the sized page and it will not float. */
+@media(max-width: 600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+
 }
